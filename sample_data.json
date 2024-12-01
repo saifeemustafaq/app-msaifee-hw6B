@@ -1,0 +1,279 @@
+{
+    "users": [
+        {
+            "userId": "12345",
+            "username": "john.doe",
+            "email": "jdoe@andrew.cmu.edu",
+            "role": "STUDENT",
+            "isVerified": true,
+            "firstName": "John",
+            "lastName": "Doe",
+            "phoneNumber": "+1-412-555-0123",
+            "campusAffiliation": "Silicon Valley",
+            "profilePictureUrl": "https://example.com/profile/12345.jpg",
+            "createdAt": "2024-01-15T08:00:00Z",
+            "lastLogin": "2024-03-19T10:30:00Z",
+            "status": "ACTIVE",
+            "tokenBalance": 50
+        },
+        {
+            "userId": "12346",
+            "username": "jane.smith",
+            "email": "jsmith@andrew.cmu.edu",
+            "role": "STUDENT",
+            "isVerified": true,
+            "firstName": "Jane",
+            "lastName": "Smith",
+            "phoneNumber": "+1-412-555-0124",
+            "campusAffiliation": "Silicon Valley",
+            "profilePictureUrl": "https://example.com/profile/12346.jpg",
+            "createdAt": "2024-01-16T08:00:00Z",
+            "lastLogin": "2024-03-18T10:30:00Z",
+            "status": "ACTIVE",
+            "tokenBalance": 75
+        },
+        {
+            "userId": "landlord123",
+            "username": "property.owner",
+            "email": "owner@properties.com",
+            "role": "LANDLORD",
+            "isVerified": true,
+            "firstName": "Property",
+            "lastName": "Owner",
+            "phoneNumber": "+1-412-555-0125",
+            "campusAffiliation": "Silicon Valley",
+            "profilePictureUrl": "https://example.com/profile/landlord123.jpg",
+            "createdAt": "2024-01-01T08:00:00Z",
+            "lastLogin": "2024-03-19T09:30:00Z",
+            "status": "ACTIVE",
+            "tokenBalance": 0
+        }
+    ],
+    "properties": [
+        {
+            "propertyId": "prop789",
+            "landlordId": "landlord123",
+            "propertyName": "Silicon Valley Apartments",
+            "address": {
+                "street": "123 Tech Drive",
+                "city": "Mountain View",
+                "state": "CA",
+                "zipCode": "94043",
+                "country": "USA"
+            },
+            "geolocation": {
+                "latitude": 37.3861,
+                "longitude": -122.0839
+            },
+            "propertyType": "APARTMENT",
+            "description": "Modern apartment complex near CMU Silicon Valley campus",
+            "status": "AVAILABLE"
+        },
+        {
+            "propertyId": "prop790",
+            "landlordId": "landlord123",
+            "propertyName": "Tech Commons",
+            "address": {
+                "street": "456 Innovation Ave",
+                "city": "Mountain View",
+                "state": "CA",
+                "zipCode": "94043",
+                "country": "USA"
+            },
+            "geolocation": {
+                "latitude": 37.3862,
+                "longitude": -122.0840
+            },
+            "propertyType": "APARTMENT",
+            "description": "Student-friendly apartments with study rooms",
+            "status": "AVAILABLE"
+        }
+    ],
+    "mediaAssets": [
+        {
+            "assetId": "asset456",
+            "propertyId": "prop789",
+            "assetType": "IMAGE",
+            "url": "https://example.com/properties/prop789/images/1.jpg",
+            "description": "Living Room",
+            "uploadDate": "2024-02-01T14:30:00Z",
+            "status": "ACTIVE"
+        },
+        {
+            "assetId": "asset457",
+            "propertyId": "prop789",
+            "assetType": "IMAGE",
+            "url": "https://example.com/properties/prop789/images/2.jpg",
+            "description": "Kitchen",
+            "uploadDate": "2024-02-01T14:31:00Z",
+            "status": "ACTIVE"
+        }
+    ],
+    "posts": [
+        {
+            "postId": "post123",
+            "userId": "12345",
+            "postType": "DISCUSSION",
+            "content": "Looking for roommates near Mountain View campus",
+            "creationDate": "2024-03-15T09:00:00Z",
+            "lastEdited": "2024-03-15T09:00:00Z",
+            "status": "ACTIVE",
+            "commentCount": 5,
+            "reactionCount": 12
+        },
+        {
+            "postId": "post124",
+            "userId": "12346",
+            "postType": "DISCUSSION",
+            "content": "Housing experience in Silicon Valley area",
+            "creationDate": "2024-03-16T09:00:00Z",
+            "lastEdited": "2024-03-16T09:00:00Z",
+            "status": "ACTIVE",
+            "commentCount": 3,
+            "reactionCount": 8
+        }
+    ],
+    "comments": [
+        {
+            "commentId": "comment789",
+            "postId": "post123",
+            "userId": "67890",
+            "content": "I'm also looking for roommates in that area!",
+            "creationDate": "2024-03-15T10:30:00Z",
+            "lastEdited": "2024-03-15T10:30:00Z",
+            "status": "ACTIVE",
+            "parentCommentId": null
+        },
+        {
+            "commentId": "comment790",
+            "postId": "post123",
+            "userId": "12346",
+            "content": "The Tech Commons area is great for students",
+            "creationDate": "2024-03-15T11:30:00Z",
+            "lastEdited": "2024-03-15T11:30:00Z",
+            "status": "ACTIVE",
+            "parentCommentId": null
+        }
+    ],
+        "applications": [
+        {
+            "applicationId": "app123",
+            "userId": "12345",
+            "propertyId": "prop789",
+            "submissionDate": "2024-03-01T09:00:00Z",
+            "status": "PENDING",
+            "documentUrls": []
+        },
+        {
+            "applicationId": "app124",
+            "userId": "12346",
+            "propertyId": "prop790",
+            "submissionDate": "2024-03-02T10:00:00Z",
+            "status": "APPROVED",
+            "documentUrls": []
+        }
+    ],
+    "documents": [
+        {
+            "documentId": "doc123",
+            "applicationId": "app123",
+            "description": "Student ID",
+            "documentName": "student_id.pdf",
+            "documentType": "ID_PROOF",
+            "uploadedBy": "12345",
+            "dateUploaded": "2024-03-01T09:00:00Z",
+            "dateModified": "2024-03-01T09:00:00Z",
+            "isDeleted": false,
+            "fileType": "PDF",
+            "filePath": "/documents/app123/student_id.pdf",
+            "fileSize": 1024
+        },
+        {
+            "documentId": "doc124",
+            "applicationId": "app123",
+            "description": "Proof of Income",
+            "documentName": "income_proof.pdf",
+            "documentType": "INCOME_PROOF",
+            "uploadedBy": "12345",
+            "dateUploaded": "2024-03-01T09:05:00Z",
+            "dateModified": "2024-03-01T09:05:00Z",
+            "isDeleted": false,
+            "fileType": "PDF",
+            "filePath": "/documents/app123/income_proof.pdf",
+            "fileSize": 2048
+        }
+    ],
+    "tokenActivities": [
+        {
+            "activityId": "act123",
+            "userId": "12345",
+            "activityType": "EARN",
+            "amount": 10,
+            "description": "Profile completion bonus",
+            "date": "2024-03-01T08:00:00Z",
+            "status": "COMPLETED"
+        },
+        {
+            "activityId": "act124",
+            "userId": "12345",
+            "activityType": "SPEND",
+            "amount": 5,
+            "description": "Viewed property details",
+            "date": "2024-03-02T10:00:00Z",
+            "status": "COMPLETED"
+        },
+        {
+            "activityId": "act125",
+            "userId": "12346",
+            "activityType": "EARN",
+            "amount": 15,
+            "description": "Referral bonus",
+            "date": "2024-03-03T09:00:00Z",
+            "status": "COMPLETED"
+        }
+    ],
+    "property_reviews": [
+        {
+            "reviewId": "review123",
+            "propertyId": "prop789",
+            "userId": "12345",
+            "rating": 4.5,
+            "comment": "Great location and amenities",
+            "createdAt": "2024-03-15T09:00:00Z",
+            "status": "ACTIVE"
+        },
+        {
+            "reviewId": "review124",
+            "propertyId": "prop789",
+            "userId": "12346",
+            "rating": 4.0,
+            "comment": "Clean and well-maintained",
+            "createdAt": "2024-03-16T10:00:00Z",
+            "status": "ACTIVE"
+        }
+    ],
+    "property_amenities": [
+        {
+            "amenityId": "amen123",
+            "propertyId": "prop789",
+            "features": [
+                "Swimming Pool",
+                "Gym",
+                "Study Room",
+                "Laundry"
+            ],
+            "utilities": [
+                "Water",
+                "Electricity",
+                "Internet"
+            ],
+            "parking": {
+                "type": "Covered",
+                "spots": 50,
+                "includedInRent": true
+            },
+            "createdAt": "2024-02-01T08:00:00Z",
+            "updatedAt": "2024-02-01T08:00:00Z"
+        }
+    ]
+}
